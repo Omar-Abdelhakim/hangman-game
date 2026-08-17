@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman | Omar Abdelhakim</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page">
+        <div class="container">
+            <div class="game-info">
+                <div class="game-class">
+                    <div class="logo-icon">
+                        <i class="fa-solid fa-gamepad"></i>
+                    </div>
+                    <div>
+                        <h1>Hangman</h1>
+                        <p>Guess the hidden word</p>
+                    </div>
+                </div>
+                <div class="category">
+                    <span class="category-label">
+                        WORD FROM
+                    </span>
+                    <span></span>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="hangman-draw">
+                    <div class="game-status">
+                        <span class="status-dot"></span>
+                        Game Started
+                    </div>
+                    <div class="the-draw">
+                        <div class="the-stand"></div>
+                        <div class="the-hang"></div>
+                        <div class="the-rope"></div>
+                        <div class="the-man">
+                            <div class="head"></div>
+                            <div class="body"></div>
+                            <div class="hands"></div>
+                            <div class="legs"></div>
+                        </div>
+                    </div>
+                    <div class="wrong-counter">
+                        Mistakes:
+                        <strong>0</strong>
+                        <span>/ 8</span>
+                    </div>
+                </div>
+                <div class="letters">
+                    <div class="letters-title">
+                        <div>
+                            <span>Choose a letter</span>
+                            <small>Find the hidden word</small>
+                        </div>
+                        <div class="keyboard-icon">
+                            <i class="fa-regular fa-keyboard"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="word-section">
+                <div class="word-title">
+                    <span>Hidden Word</span>
+                    <small>Guess every letter to win</small>
+                </div>
+                <div class="letter-gues"></div>
+            </div>
+        </div>
+        <footer>
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <i class="fa-solid fa-gamepad"></i>
+                    </div>
+                    <div>
+                        <h3>Hangman</h3>
+                        <p>A modern JavaScript word game.</p>
+                    </div>
+                </div>
+                <div class="creator">
+                    <span>CREATED BY</span>
+                    <strong>Eng. Omar Abdelhakim</strong>
+                </div>
+                <div class="footer-social">
+                    <a href="https://wa.me/201110648860" target="_blank" aria-label="WhatsApp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <a href="https://github.com/Omar-Abdelhakim" target="_blank" aria-label="GitHub">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/omar-elawady-752092348/"target="_blank"aria-label="LinkedIn">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://www.instagram.com/omar_abdalhakim?igsh=MWc5aDR1bHk4dWoyZA=="target="_blank"aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>© 2026 Eng. Omar Abdelhakim</span>
+                <span>Made with<b>♥</b></span>
+            </div>
+        </footer>
+    </div>
+    <audio id="success" src="aduio/correct_coin.wav" preload="auto"></audio>
+    <audio id="fail" src="aduio/wrong(2).wav" preload="auto"></audio>
+    <script src="main.js"></script>
+</body>
+
+</html>
